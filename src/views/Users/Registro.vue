@@ -17,7 +17,7 @@
 
       <div v-if="error">
         <div  class="mt-4 alert alert-danger alert-dismissible fade show" role="alert" >
-          <strong>Error !</strong> Usuario / Correo ya existe!
+          <strong>Error !</strong> Usuario / Correo Invalido!
           <button
             type="button"
             class="close"
@@ -56,7 +56,7 @@
 
 import axios from "axios";
 
-var mensaje = document.getElementById('mensaje');
+
 export default {
   name: "Registro",
   data() {
@@ -93,7 +93,7 @@ export default {
       })
        .then((response) => {
                 this.loading= true
-               // this.$router.push('/login')
+               // this.$router.push('/registro')
             })
       
      .catch((err) =>{
